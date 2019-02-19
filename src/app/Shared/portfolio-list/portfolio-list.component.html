@@ -1,0 +1,20 @@
+<div class="container-fluid" *ngIf="portfolioModel">
+	<div class="row">
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 lesson-card" *ngFor="let x of portfolios">
+			<div class="card lesson-border">
+				<img class="card-img-top" src="{{x.image}}" alt="Card image cap">
+				<div class="card-body">
+          <p class="card-text"><b>Date: </b>{{x.id}}</p>
+          <h5 class="card-title"><b>Title: </b>{{x.title}}</h5>
+          <p class="card-text"><b>Author: </b>{{x.author}}</p>
+          <p class="card-text"><b>Author Id: </b>{{x.authorId}}</p>
+          <p class="card-text"><b>Content: </b>{{x.content}}</p>
+          <p class="card-text"><b>Image: </b>{{x.image}}</p>
+          <p class="card-text"><b>Published date: </b>{{x.published}}</p>
+					<button type="button" class="btn btn-lesson" (click)="open(portfolioModel)">Portfolio Details</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{portfolioModel}}

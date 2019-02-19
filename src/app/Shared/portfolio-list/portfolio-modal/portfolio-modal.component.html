@@ -1,0 +1,23 @@
+<div class="modal-header">
+	<h4 class="modal-title">Hi there!</h4>
+	<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+</div>
+<div class="modal-body">
+	<div class="card portfolioModel-border">
+		<img class="card-img-top" src="{{portfolioModel.image_path}}" alt="Card image cap">
+		<div class="card-body">
+			<p class="card-text"><b>Date: </b>{{portfolioModel.id}}</p>
+			<h5 class="card-title"><b>Title: </b>{{portfolioModel.title}}</h5>
+			<p class="card-text"><b>Author: </b>{{portfolioModel.author}}</p>
+      <p class="card-text"><b>Author Id: </b>{{portfolioModel.authorId}}</p>
+      <p class="card-text"><b>Content: </b>{{portfolioModel.content}}</p>
+      <p class="card-text"><b>Image: </b>{{portfolioModel.image}}</p>
+      <p class="card-text"><b>Published date: </b>{{portfolioModel.published}}</p>
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>
